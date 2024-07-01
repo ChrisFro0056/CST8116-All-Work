@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>360</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>Brick
+--
++EXPECTED_LENGTH = 215.0: double
++EXPECTED_WIDTH = 102.0: double
++EXPECTED_HEIGHT = 65.0: double
+-length: double
+-width: double
+-height: double
+--
++Brick()
++Brick(double length, double width, double height): ctor
++getLength(): double
++setLength(double length): void
++getWidth(): double
++setWidth(double width): void
++getHeight(): double
++setHeight(double height): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>10</y>
+      <w>310</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-keyboard = new Scanner(System.in): Scanner
+--
+-User()
++inputInteger(String message): int
++inputDouble(String message): double
++inputString(String message): String
+-inputInteger(): int
+-inputDouble(): double
+-inputString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>330</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BrickChecker
+--
++EPSILON_LENGTH = 6: int
++EPSILON_WIDTH = 4: int
++EPSILON_HEIGHT = 3: int
+--
++validate(Brick brick): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>330</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Driver
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

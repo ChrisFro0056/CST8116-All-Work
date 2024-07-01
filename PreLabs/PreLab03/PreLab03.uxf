@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>160</y>
+      <w>470</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Car
+--
+-vehicleIdentificationNumber: String
+-mileage: num
+-invoicePrice: num
+--
++getVehicleIdentificationNumber():String
++setVehicleIdentificationNumber(vehicleIdentificationNumber:String):void
++getMileage():num
++setMileage(Mileage:num):void
++getInvoicePrice():num
++setInvoicePrice(invoicePrice:num):void
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
